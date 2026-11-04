@@ -1,0 +1,7 @@
+- insert:
+    - id: adhd-noise
+      name: dsh-adhd-noise
+      config:
+        defaultSound: pink
+        defaultVolume: 0.3
+        timerMinutes: 25

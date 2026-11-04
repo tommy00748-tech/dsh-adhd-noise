@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64" role="img" aria-label="ADHD Focus Noise">
+  <defs>
+    <radialGradient id="adn-halo" cx="50%" cy="50%" r="50%">
+      <stop offset="0" stop-color="#f6c2cb" stop-opacity="0.6"/>
+      <stop offset="0.58" stop-color="#ec9aab" stop-opacity="0.24"/>
+      <stop offset="1" stop-color="#ec9aab" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="adn-orb" cx="37%" cy="31%" r="66%">
+      <stop offset="0" stop-color="#fdeef1"/>
+      <stop offset="0.42" stop-color="#f2afbc"/>
+      <stop offset="0.78" stop-color="#e58da0" stop-opacity="0.85"/>
+      <stop offset="1" stop-color="#e58da0" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="adn-rim" x1="14" y1="12" x2="50" y2="52" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#ffffff" stop-opacity="0.9"/>
+      <stop offset="0.38" stop-color="#ffffff" stop-opacity="0.12"/>
+      <stop offset="0.72" stop-color="#ffffff" stop-opacity="0"/>
+      <stop offset="1" stop-color="#ffffff" stop-opacity="0.4"/>
+    </linearGradient>
+    <clipPath id="adn-clip">
+      <circle cx="32" cy="32" r="19"/>
+    </clipPath>
+  </defs>
+  <circle cx="32" cy="32" r="31" fill="url(#adn-halo)"/>
+  <circle cx="32" cy="32" r="19" fill="url(#adn-orb)"/>
+  <g clip-path="url(#adn-clip)">
+    <path d="M12 38.5c4.6-4.2 8.2 4.2 12.9 0s8.3 4.2 12.9 0 8.3 4.2 12.9 0 8.3 4.2 12.9 0"
+          fill="none" stroke="#ffffff" stroke-opacity="0.92" stroke-width="1.7" stroke-linecap="round"/>
+    <path d="M12 43.5c4.6-4.2 8.2 4.2 12.9 0s8.3 4.2 12.9 0 8.3 4.2 12.9 0 8.3 4.2 12.9 0"
+          fill="none" stroke="#ffffff" stroke-opacity="0.45" stroke-width="1.3" stroke-linecap="round"/>
+  </g>
+  <circle cx="32" cy="32" r="19" fill="none" stroke="url(#adn-rim)" stroke-width="1.1"/>
+  <ellipse cx="26" cy="24.5" rx="5.6" ry="3.4" fill="#ffffff" fill-opacity="0.42" transform="rotate(-24 26 24.5)"/>
+</svg>

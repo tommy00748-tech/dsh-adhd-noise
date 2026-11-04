@@ -1,0 +1,58 @@
+{
+  "name": "dsh-adhd-noise",
+  "version": "3.1.1",
+  "description": "ADHD-friendly focus soundscape for DeepSeek Harness: five procedurally synthesised noise colours (white, pink, brown, rain, fan) with a live-waveform orb, fade-out timer and liquid-glass popover, below the composer. No audio assets, no network requests.",
+  "type": "module",
+  "exports": {
+    ".": "./index.js",
+    "./client": "./client.js",
+    "./locale/*.json": "./locale/*.json",
+    "./icon": "./icon.svg"
+  },
+  "files": [
+    "index.js",
+    "client.js",
+    "cordis.patch.yml",
+    "locale/*.json",
+    "icon.svg",
+    "README.md",
+    "LICENSE",
+    "tools/verify.cjs"
+  ],
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web",
+      "immediately": true,
+      "inject": [
+        "@deepseek-ai/dsh-client-ui-conversation",
+        "@deepseek-ai/dsh-client-locale"
+      ]
+    }
+  },
+  "scripts": {
+    "verify": "node tools/verify.cjs"
+  },
+  "license": "MIT",
+  "author": "tommy00748-tech",
+  "homepage": "https://github.com/tommy00748-tech/dsh-adhd-noise#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tommy00748-tech/dsh-adhd-noise.git"
+  },
+  "keywords": [
+    "dsh",
+    "dsh-plugin",
+    "deepseek-harness",
+    "adhd",
+    "white-noise",
+    "focus",
+    "web-audio",
+    "ambient"
+  ],
+  "engines": {
+    "dsh": ">=0.2.1-rc.1"
+  }
+}
