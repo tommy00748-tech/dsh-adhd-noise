@@ -144,8 +144,8 @@ Host 注入的默认值、立体声缓冲（雨声/风扇 2 声道）及 RMS/峰
 
 ## 收录状态
 
-- 开放插件市场（[dshopen.org](https://dshopen.org/)）：已提交收录申请
-- [awesome-dsh-plugin](https://github.com/awesome-dsh-plugin/awesome-dsh-plugin)（format-1 索引，`dsh-market` 与 `dshmarket` 的数据源）：已提交收录 PR
+- 开放插件市场（[dshopen.org](https://dshopen.org/)）：已提交收录申请 [#231](https://github.com/polang233/dsh-plugin-index/issues/231)
+- [awesome-dsh-plugin](https://github.com/awesome-dsh-plugin/awesome-dsh-plugin)（format-1 索引，`dsh-market` 与 `dshmarket` 的数据源）：收录 PR [#11903](https://github.com/awesome-dsh-plugin/awesome-dsh-plugin/pull/11903)（仓库刚建，等待 1 天年龄门槛后转 ready）
 
 ## 许可证
 
