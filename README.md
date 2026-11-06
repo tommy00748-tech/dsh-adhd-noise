@@ -97,6 +97,14 @@ dsh plugin --profile desktop add "git+https://github.com/tommy00748-tech/dsh-adh
 - 信号链：buffer → 预设 biquad → 响度 trim → 淡入淡出 → 主音量（`v^1.8` 感知曲线）→ 峰值限制器。
 - 引擎生命周期绑定插件 `apply`，切换会话继续播放；暂停后挂起 AudioContext 省电。
 
+## 兼容性
+
+- 已在 **dsh 0.2.1-rc.5** 与 **0.2.2-rc.1** 上验证：Host 半的 index 注入
+  （`window.__ADHD_NOISE_DEFAULTS__`）正常，Client 半的 composer 胶囊、锚点与浮层槽位正常。
+- 兼容范围写在 package.json 的**顶层** `engines.dsh`（`>=0.2.1-rc.1 <0.3.0`）——dsh 0.2.2 的安装
+  兼容性闸门只读这个位置。
+- 客户端自检：`node tools/verify.cjs`。
+
 ## 使用与维护
 
 - 启用/停用：设置 → 插件（本插件行 `dsh-adhd-noise`），停用后输入框下方条目消失，声音停止。

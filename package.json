@@ -1,6 +1,6 @@
 {
   "name": "dsh-adhd-noise",
-  "version": "3.1.1",
+  "version": "3.1.2",
   "description": "ADHD-friendly focus soundscape for DeepSeek Harness: five procedurally synthesised noise colours (white, pink, brown, rain, fan) with a live-waveform orb, fade-out timer and liquid-glass popover, below the composer. No audio assets, no network requests.",
   "type": "module",
   "exports": {
@@ -53,6 +53,6 @@
     "ambient"
   ],
   "engines": {
-    "dsh": ">=0.2.1-rc.1"
+    "dsh": ">=0.2.1-rc.1 <0.3.0"
   }
 }
