@@ -97,14 +97,6 @@ dsh plugin --profile desktop add "git+https://github.com/tommy00748-tech/dsh-adh
 - 信号链：buffer → 预设 biquad → 响度 trim → 淡入淡出 → 主音量（`v^1.8` 感知曲线）→ 峰值限制器。
 - 引擎生命周期绑定插件 `apply`，切换会话继续播放；暂停后挂起 AudioContext 省电。
 
-## 兼容性
-
-- 已在 **dsh 0.2.1-rc.5** 与 **0.2.2-rc.1** 上验证：Host 半的 index 注入
-  （`window.__ADHD_NOISE_DEFAULTS__`）正常，Client 半的 composer 胶囊、锚点与浮层槽位正常。
-- 兼容范围写在 package.json 的**顶层** `engines.dsh`（`>=0.2.1-rc.1 <0.3.0`）——dsh 0.2.2 的安装
-  兼容性闸门只读这个位置。
-- 客户端自检：`node tools/verify.cjs`。
-
 ## 使用与维护
 
 - 启用/停用：设置 → 插件（本插件行 `dsh-adhd-noise`），停用后输入框下方条目消失，声音停止。
@@ -153,7 +145,7 @@ Host 注入的默认值、立体声缓冲（雨声/风扇 2 声道）及 RMS/峰
 ## 收录状态
 
 - 开放插件市场（[dshopen.org](https://dshopen.org/)）：✅ 已收录 v3.1.1。在「插件 → 发现 → 添加索引源」里粘贴 `https://dshopen.org/index.json` 即可搜索安装（申请记录 [#231](https://github.com/polang233/dsh-plugin-index/issues/231)）
-- [awesome-dsh-plugin](https://github.com/awesome-dsh-plugin/awesome-dsh-plugin)（format-1 索引，`dsh-market` 与 `dshmarket` 的数据源）：收录 PR [#11903](https://github.com/awesome-dsh-plugin/awesome-dsh-plugin/pull/11903)，CI（PR check + Submission gate）已全绿，等待维护者合并
+- [awesome-dsh-plugin](https://github.com/awesome-dsh-plugin/awesome-dsh-plugin)（format-1 索引，`dsh-market` 与 `dshmarket` 的数据源）：✅ 已合并（[PR #11903](https://github.com/awesome-dsh-plugin/awesome-dsh-plugin/pull/11903)，2026-11-05），条目已进入生成的中英文 README
 
 ## 许可证
 
